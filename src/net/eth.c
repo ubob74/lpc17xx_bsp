@@ -61,7 +61,8 @@ void eth_packet_process(void)
 		if (!p)
 			goto next;
 
-		p->proto_cb->process(net_buf.rx_buf + ETH_HLEN, net_buf.rx_size - ETH_HLEN);
+		p->proto_cb->process(net_buf.rx_buf + ETH_HLEN,
+				net_buf.rx_size - ETH_HLEN);
 next:
 		net_buf.rx_size = 0;
 		lpc17xx_eth_rx_enable();

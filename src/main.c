@@ -8,6 +8,7 @@
 #include <lpc17xx_irq.h>
 #include <lpc17xx_uart.h>
 #include <lpc17xx_eth.h>
+#include <lpc17xx_ssp.h>
 
 #include <eth.h>
 #include <uart.h>
@@ -155,9 +156,10 @@ int main()
 	string_test();
 	inet_test();
 
-	lpc17xx_eth_init();
+//	lpc17xx_eth_init();
 
-	eth_packet_process();
+/*	eth_packet_process();*/
+	lpc17xx_ssp0_init();
 out:
 	while(1);
 }

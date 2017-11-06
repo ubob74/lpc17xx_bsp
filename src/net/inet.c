@@ -69,27 +69,6 @@ char *inet_ntoa(struct in_addr in)
 	return addr;
 }
 
-
-/*uint32_t htonl(uint32_t hostlong)
-{
-	return swab32(hostlong);
-}
-
-uint16_t htons(uint16_t hostshort)
-{
-	return swab16(hostshort);
-}
-
-uint32_t ntohl(uint32_t netlong)
-{
-	return swab32(netlong);
-}
-
-uint16_t ntohs(uint16_t netshort)
-{
-	return swab16(netshort);
-}*/
-
 in_addr_t get_local_ip(void)
 {
 	return local_ip;

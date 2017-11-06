@@ -48,10 +48,7 @@ struct uart_device lpc17xx_uart_devices[] = {
 			.state = 1,
 			.irq = UART2,
 			.res = {
-				.regs = {
-					.regs = (void *)&uart_regs,
-					.nr_regs = 0, /* not used now */
-				},
+				.regs = (void *)&uart_regs,
 				.pins = {
 					.pins = uart2_pins,
 					.nr_pins = ARRAY_SIZE(uart2_pins),

@@ -1,9 +1,0 @@
-#ifndef _LPC17XX_ETH_RESOURCES_H_
-#define _LPC17XX_ETH_RESOURCES_H_
-
-#include <lpc17xx_eth.h>
-
-extern struct eth_pin eth_pin[];
-extern struct eth_device lpc17xx_eth_device;
-
-#endif /* _LPC17XX_ETH_RESOURCES_H_ */

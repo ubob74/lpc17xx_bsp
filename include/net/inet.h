@@ -48,12 +48,6 @@ uint16_t swab16(uint16_t val);
 #define ntohl(netlong)		swab32(netlong)
 #define ntohs(netshort)		swab16(netshort)
 
-/*
-uint32_t htonl(uint32_t hostlong);
-uint16_t htons(uint16_t hostshort);
-uint32_t ntohl(uint32_t netlong);
-uint16_t ntohs(uint16_t netshort);*/
-
 void set_local_ip(const char *addr);
 in_addr_t get_local_ip(void);
 int net_init(void);

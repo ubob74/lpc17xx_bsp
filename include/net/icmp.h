@@ -2,7 +2,6 @@
 #define _ICMP_H_
 
 #include <_stdint.h>
-//#include <inet.h>
 
 #define ICMP_HLEN	4
 

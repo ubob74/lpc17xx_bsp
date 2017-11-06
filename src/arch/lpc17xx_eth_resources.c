@@ -106,10 +106,7 @@ struct eth_device lpc17xx_eth_device = {
 		.id = 0,
 		.state = 1,
 		.res = {
-			.regs = {
-				.regs = (void *)&eth_regs,
-				.nr_regs = 0, /* not used now */
-			},
+			.regs = (void *)&eth_regs,
 			.pins = {
 				.pins = eth_pins,
 				.nr_pins = ARRAY_SIZE(eth_pins),

@@ -48,7 +48,7 @@ int set_value(uint32_t addr, int value, uint8_t pos, int width)
 	mask = (1 << width) - 1;
 	regval &= ~(mask << pos);
 
-	/* Setup a new value */
+	/* Setup a new one */
 	regval |= (value << pos);
 	writel(addr, regval);
 

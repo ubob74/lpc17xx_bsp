@@ -12,9 +12,9 @@
  * - 0x01 - main oscillator as a PLL0 clock source
  * - 0x02 - RTC oscillator  as a PLL0 clock source
  */
-#define IRC_OSC	0x00
-#define OSC_CLK	0x01
-#define RTC_CLK 0x02
+#define IRC_OSC		0x00
+#define OSC_CLK		0x01
+#define RTC_CLK		0x02
 
 /*****************
  * PLL0, Main PLL
